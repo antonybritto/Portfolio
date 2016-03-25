@@ -1,11 +1,11 @@
 importScripts('serviceworker-cache-polyfill.js');
 
-var CACHE_NAME = 'React-FullStack-2';
+var CACHE_NAME = 'React-FullStack-3';
 // The files we want to cache
 var urlsToCache = [
   '/',
-  '/build/bundle2.min.css',
-  '/build/bundle2.min.js'
+  '/build/bundle3.min.css',
+  '/build/bundle3.min.js'
 ];
 
 self.addEventListener('install', (event) => {
