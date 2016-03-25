@@ -5,8 +5,7 @@ var CACHE_NAME = 'React-FullStack-6';
 var urlsToCache = [
   '/Portfolio/',
   'build/bundle6.min.css',
-  'build/bundle6.min.js',
-  '/Portfolio/img/'
+  'build/bundle6.min.js'
 ];
 
 self.addEventListener('install', (event) => {
