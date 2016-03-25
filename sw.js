@@ -6,7 +6,7 @@ var urlsToCache = [
   '/Portfolio/',
   'build/bundle7.min.css',
   'build/bundle7.min.js',
-  '/Portfolio/img',
+  '/Portfolio/img/',
 ];
 
 self.addEventListener('install', (event) => {
