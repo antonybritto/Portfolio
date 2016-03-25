@@ -1,0 +1,28 @@
+{
+  "short_name": "Antony Britto",
+  "name": "Antony Britto - Portfolio",
+  "icons": [
+    {
+      "src": "avatar-48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "avatar-114.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "avatar-152.png",
+      "sizes": "192x192"
+    }
+  ],
+  "gcm_sender_id": "170598578570",
+  "gcm_user_visible_only": true,
+  "permissions": [
+      "gcm"
+  ],
+  "start_url": "index.html?launcher=true",
+  "orientation": "portrait",
+  "display": "standalone",
+  "theme_color": "#2098d1",
+  "background_color": "#2098d1"
+}
