@@ -1,11 +1,11 @@
 importScripts('serviceworker-cache-polyfill.js');
 
-var CACHE_NAME = 'React-FullStack-6';
+var CACHE_NAME = 'React-FullStack-7';
 // The files we want to cache
 var urlsToCache = [
   '/Portfolio/',
-  'build/bundle6.min.css',
-  'build/bundle6.min.js'
+  'build/bundle7.min.css',
+  'build/bundle7.min.js'
 ];
 
 self.addEventListener('install', (event) => {
