@@ -1,11 +1,12 @@
 importScripts('serviceworker-cache-polyfill.js');
 
-var CACHE_NAME = 'React-FullStack-5';
+var CACHE_NAME = 'React-FullStack-6';
 // The files we want to cache
 var urlsToCache = [
-  '/',
-  'build/bundle5.min.css',
-  'build/bundle5.min.js'
+  '/Portfolio/',
+  'build/bundle6.min.css',
+  'build/bundle6.min.js',
+  '/Portfolio/img/'
 ];
 
 self.addEventListener('install', (event) => {
@@ -69,11 +70,11 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('push', function(event) {
   console.log('Push message received', event);
-  var title = 'Push message';
+  var title = 'Added to Homescreen';
   event.waitUntil(
     self.registration.showNotification(title, {
-      body: 'Push Message',
-      icon: 'images/icon.png',
+      body: 'Thanks for adding. Please check your homescreen for avatar icon.',
+      icon: 'avatar-48.png',
       tag: 'my-tag'
     }));
 });
