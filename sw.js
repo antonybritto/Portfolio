@@ -1,6 +1,6 @@
 importScripts('serviceworker-cache-polyfill.js');
 
-var CACHE_NAME = 'React-FullStack-APP';
+var CACHE_NAME = 'React-FullStack-APP2';
 // The files we want to cache
 var urlsToCache = [
   '/',
@@ -9,12 +9,13 @@ var urlsToCache = [
 ];
 
 self.addEventListener('install', (event) => {
-  self.skipWaiting();
+  //self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache)=> {
       return cache.addAll(urlsToCache);
     })
   );
+
 });
 
 
@@ -71,7 +72,7 @@ self.addEventListener('push', function(event) {
   var title = 'Push message';
   event.waitUntil(
     self.registration.showNotification(title, {
-      body: 'The Message',
+      body: 'Push Message',
       icon: 'images/icon.png',
       tag: 'my-tag'
     }));
